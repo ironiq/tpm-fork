@@ -1,4 +1,13 @@
+# Directories
+.vscode/
+tmp/
 **/.vagrant/
+
+# Files
+*.log
+*.sw?
+*.code-workspace
+desktop.ini
 run_tests
 tests/run_tests_in_isolation
 tests/helpers/helpers.sh
