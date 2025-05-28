@@ -1,14 +1,12 @@
 # Tmux Plugin Manager
 
-[![Build Status](https://travis-ci.org/tmux-plugins/tpm.svg?branch=master)](https://travis-ci.org/tmux-plugins/tpm)
-
 Installs and loads `tmux` plugins.
 
 Tested and working on Linux, OSX, and Cygwin.
 
 See list of plugins [here](https://github.com/tmux-plugins/list).
 
-### Installation
+# Installation
 
 Requirements: `tmux` version 1.9 (or higher), `git`, `bash`.
 
@@ -28,7 +26,9 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 
 # Other examples:
 # set -g @plugin 'github_username/plugin_name'
+# set -g @plugin 'github_username/plugin_name##directory_name'
 # set -g @plugin 'github_username/plugin_name#branch'
+# set -g @plugin 'github_username/plugin_name#branch#directory_name'
 # set -g @plugin 'git@github.com:user/plugin'
 # set -g @plugin 'git@bitbucket.com:user/plugin'
 
@@ -45,14 +45,14 @@ tmux source ~/.tmux.conf
 
 That's it!
 
-### Installing plugins
+# Installing plugins
 
 1. Add new plugin to `~/.tmux.conf` with `set -g @plugin '...'`
 2. Press `prefix` + <kbd>I</kbd> (capital i, as in **I**nstall) to fetch the plugin.
 
 You're good to go! The plugin was cloned to `~/.tmux/plugins/` dir and sourced.
 
-### Uninstalling plugins
+# Uninstalling plugins
 
 1. Remove (or comment out) plugin from the list.
 2. Press `prefix` + <kbd>alt</kbd> + <kbd>u</kbd> (lowercase u as in **u**ninstall) to remove the plugin.
@@ -60,7 +60,7 @@ You're good to go! The plugin was cloned to `~/.tmux/plugins/` dir and sourced.
 All the plugins are installed to `~/.tmux/plugins/` so alternatively you can
 find plugin directory there and remove it.
 
-### Key bindings
+# Key bindings
 
 `prefix` + <kbd>I</kbd>
 - Installs new plugins from GitHub or any other git repository
@@ -72,7 +72,7 @@ find plugin directory there and remove it.
 `prefix` + <kbd>alt</kbd> + <kbd>u</kbd>
 - remove/uninstall plugins not on the plugin list
 
-### Docs
+# Docs
 
 - [Help, tpm not working](docs/tpm_not_working.md) - problem solutions
 
@@ -84,7 +84,7 @@ this:
 - [Changing plugins install dir](docs/changing_plugins_install_dir.md)
 - [Automatic TPM installation on a new machine](docs/automatic_tpm_installation.md)
 
-### Tests
+# Tests
 
 Tests for this project run on [Travis CI](https://travis-ci.org/tmux-plugins/tpm).
 
@@ -96,6 +96,7 @@ Run tests with:
 ./run_tests
 ```
 
-### License
+# License
 
 [MIT](LICENSE.md)
+
