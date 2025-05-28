@@ -4,14 +4,15 @@ ensure_tpm_path_exists() {
 
 fail_helper() {
 	local message="$1"
-	echo "$message" >&2
+	echo "${message}" >&2
 	FAIL="true"
 }
 
 exit_value_helper() {
-	if [ "$FAIL" == "true" ]; then
+	if [ "x${FAIL}" == "xtrue" ]; then
 		exit 1
 	else
 		exit 0
 	fi
 }
+
